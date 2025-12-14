@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Online Leave Application Form
+        </title>
+        <script>
+            function showMessage(){
+                alert("Form Submitted Successfully");
+            }
+        </script>
+    </head>
+    <body>
+        <img src="aditya_logo.png" 
+        style="position:absolute; top:20px; right:20px; width:120px;">
+        <h4 style = "text-align: center;"> ADITYA UNIVERSITY </h4>
+        <h6 style = "text-align: center;"> Aditya Nagar, ADB Rd, Surampalem, Andhra Pradesh 533437 </h6>
+        <center>
+            <form onsubmit="showMessage()">
+            <table border="1" cellpadding = "8">
+                    <tr>
+                        <td colspan="2" align="center" ><b>Online Leave Application Form</b> </td>
+                    </tr>
+                    <tr>
+                        <td> 1) Roll Number </td>
+                        <td> <input type = "text" required></td>
+                    </tr>
+                    
+                    <tr>
+                        <td> 2) Student Name </td>
+                        <td> <input type = "text" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>3) Department</td>
+                        <td><input type = "text" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>4) Year / Section</td>
+                        <td><input type = "text" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>5) Leave Type</td>
+                        <td>
+                            <input type = "radio" name = "leave"> Sick
+                            <input type = "radio" name = "leave"> Personal
+                            <input type = "radio" name = "leave"> Emergency
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6) From Date</td>
+                        <td><input type = "date" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>7) To Date</td>
+                        <td><input type = "date" required></td>
+                    </tr>
+
+                    <tr>
+                        <td>8) Reason for Leave</td>
+                        <td><textarea rows = "3" cols = "20" required></textarea></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type = "submit">
+                            <input type = "reset">
+                        </td>
+                    </tr>
+            </table>
+            </form>
+        </center>
+    </body>
+</html>
