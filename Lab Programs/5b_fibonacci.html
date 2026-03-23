@@ -1,0 +1,28 @@
+<!-- 3) ii.  Fibonacci series up to that number -->
+
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE> Fibonacci </TITLE>
+    </HEAD>
+    <BODY>
+        <H2> Fibonacci Series </H2>
+        <input type="number" id="num">
+        <button onclick="fib()">Show</button>
+        <p id = "res"></p>
+
+        <script>
+            function fib(){
+                let n = Number(document.getElementById("num").value);
+                let a = 0,b=1,r = "",c;
+                for(let i=1;i<=n;i++){
+                    r += a+" ";
+                    c = a+b;
+                    a=b;
+                    b = c;
+                }
+                document.getElementById("res").innerHTML = r;
+            }
+        </script>
+    </BODY>
+</HTML>

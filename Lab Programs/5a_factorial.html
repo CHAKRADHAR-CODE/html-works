@@ -1,0 +1,23 @@
+<!-- 3) i. Factorial of that number -->
+
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE> FACTORIAL </TITLE>
+    </HEAD>
+    <BODY>
+        <H2> FACTORIAL </H2>
+        <INPUT TYPE="NUMBER" ID = "NUM">
+        <BUTTON ONCLICK = "FACT()">FIND</BUTTON>
+        <P ID="RES"></P>
+
+        <SCRIPT>
+            function FACT(){
+                let n = Number(document.getElementById("NUM").value);
+                let f = 1;
+                for(let i = 1;i<=n;i++) f=f*i;
+                document.getElementById("RES").innerHTML = f;
+            }
+        </SCRIPT>
+    </BODY>
+</HTML>

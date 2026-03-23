@@ -1,0 +1,28 @@
+<!-- 3) ii. Combinator selector (descendant, child, adjacent sibling, general sibling) -->
+
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE> Combinator Selectors </TITLE>
+
+        <STYLE>
+            DIV P{COLOR:ORANGE;}        /* descendant */
+            DIV > SPAN{COLOR:BROWN;}    /* child */
+            H3+P{COLOR:PINK;}           /* adjacent sibling */
+            H4~P{COLOR:GRAY;}           /* general sibling */
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <DIV>
+            <P> Descendant Selector </P>
+            <SPAN> Child Selector </SPAN>  
+        </DIV>
+
+        <H3> HEADING </H3>
+        <P> Adjacent Sibling </P>
+
+        <H4> HEADING </H4>
+        <P> General Sibling 1 </P>
+        <P> General Sibling 2 </P>
+    </BODY>
+</HTML>

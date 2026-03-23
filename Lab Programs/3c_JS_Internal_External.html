@@ -1,0 +1,20 @@
+<!-- 3) iii. Write a program to embed internal and external JavaScript in a web page. -->
+
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE> JAVA SCRIPT </TITLE>
+
+        <SCRIPT>
+            function internalMsg(){
+                alert("INTERNAL JS");
+            }
+        </SCRIPT>
+        <SCRIPT SRC = "3c_script.js"></SCRIPT>
+    </HEAD>
+    <BODY>
+        <BUTTON ONCLICK = "internalMsg()">INTERNAL</BUTTON>
+
+        <BUTTON ONCLICK = "externalMsg()"> EXTERNAL </BUTTON>
+    </BODY>
+</HTML>
